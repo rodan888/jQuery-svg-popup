@@ -1,0 +1,170 @@
+@font-face {
+	font-family: OpenSansLight;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/OpenSansLight/OpenSansLight.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSansLight/OpenSansLight.woff) format("woff"),url(../fonts/OpenSansLight/OpenSansLight.ttf) format("truetype")
+}
+
+.main-title {
+	background-color: #2cbc99;
+	position: relative
+}
+
+.main-title h1 {
+	max-width: 700px;
+	margin: 0 auto;
+	color: #fff;
+	font-family: 'OpenSansLight';
+	font-weight: 100;
+	font-size: 44px;
+	line-height: 125px;
+	min-height: 135px;
+	position: relative
+}
+
+.main-title h1:before {
+	position: absolute;
+	content: '';
+	bottom: -39px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 40px 0;
+	border-color: #2cbc99 transparent transparent
+}
+
+.title-plagin {
+	font-size: 32px;
+	padding-left: 30px;
+	border-left: 5px solid #fcbf02
+}
+
+.plagin-content{
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.demo-wrap{
+	margin: 60px 0;
+}
+
+.demo-wrap .demo-item {
+	display: inline-block;
+	width: 32%;
+	padding: 5px;
+	position: relative;
+	margin-left: 6px;
+	margin-bottom: 6px;
+}
+
+.demo-wrap .demo-item:nth-child(3n+0) {
+	margin-left: 0
+}
+
+.demo-wrap .demo-item:before {
+	position: absolute;
+	content: '';
+	top: 5px;
+	left: 5px;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 1px 6px #999;
+	box-shadow: 1px 1px 6px #999;
+	z-index: -1;
+	-webkit-border-radius: 8px;
+	border-radius: 8px
+}
+
+.demo-wrap .demo-item img {
+	width: 100%;
+	height: auto
+}
+
+.demo-wrap .demo-item .demo-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 5px 15px;
+	background-color: #2cbc99;
+	color: #fff;
+	outline: none;
+	-webkit-box-shadow: 3px 3px 15px #666;
+	box-shadow: 3px 3px 15px #666;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	transition: -webkit-box-shadow .3s;
+	transition: box-shadow .3s;
+	transition: box-shadow .3s,-webkit-box-shadow .3s;
+	-webkit-transition: box-shadow .3s;
+	-moz-transition: box-shadow .3s;
+	-o-transition: box-shadow .3s;
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%)
+}
+
+.demo-wrap .demo-item .demo-btn:hover {
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+
+
+.svg-popup-content{
+	padding: 30px 15px;	
+	background-color: #fff;
+	box-shadow: 1px 1px 3px #ccc;
+	border-radius: 5px;
+}
+
+.svg-popup-content .svg-popup-close{
+	cursor: pointer;
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 40px;
+	height: 40px;	
+	background-color: #111;
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 41px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+footer {
+	background-color: #2cbc99;
+	color: #fff;
+	margin-top: 0
+}
+
+footer .copy {
+	line-height: 50px
+}
+
+footer .copy a {
+	color: #fff
+}
+
+footer .copy .dev {
+	position: absolute;
+	right: 0;
+	bottom: -45px;
+	width: 150px;
+	height: 40px;
+	padding-left: 24px;
+	background-image: url(../img/copy.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+	line-height: 14px!important;
+	background-size: 20px;
+	font-size: 10px;
+	padding-top: 5px
+}
+
+footer .copy .dev span {
+	display: block
+}
