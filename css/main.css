@@ -40,6 +40,10 @@
 	border-left: 5px solid #fcbf02
 }
 
+.svg-popup-content p a{
+	color: #fcbf02;
+	border-bottom: #111;
+}
 .plagin-content{
 	max-width: 700px;
 	margin: 0 auto;
@@ -113,27 +117,7 @@
 }
 
 
-.svg-popup-content{
-	padding: 30px 15px;	
-	background-color: #fff;
-	box-shadow: 1px 1px 3px #ccc;
-	border-radius: 5px;
-}
 
-.svg-popup-content .svg-popup-close{
-	cursor: pointer;
-	position: absolute;
-	top: -20px;
-	right: -20px;
-	width: 40px;
-	height: 40px;	
-	background-color: #111;
-	font-size: 16px;
-	color: #ffffff;
-	line-height: 41px;
-	text-align: center;
-	border-radius: 50%;
-}
 
 footer {
 	background-color: #2cbc99;
@@ -164,7 +148,6 @@ footer .copy .dev {
 	font-size: 10px;
 	padding-top: 5px
 }
-
 footer .copy .dev span {
 	display: block
 }
