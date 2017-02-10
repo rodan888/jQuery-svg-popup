@@ -1,3 +1,10 @@
+/*
+jQuery-svg-popup
+URL: http://tsumbaluk.in.ua/jquery-svg-popup
+Author: Alexander Tsymbalyuk <tsumbaluk888@gmail.com>
+Version: 1.0.3
+License: MIT
+*/
 ;(function ( $, window, document, undefined ) {
 		var pluginName = 'svgpopup',
 				defaults = {
@@ -122,6 +129,13 @@
 								'-webkit-transition': 'all '+config.speed+'s',
 								'opacity': '1'
 							});
+							if($('.svg-popup-content').height() >= config.height){
+								$('.svg-popup-content').css({
+									'max-height': config.height - 30 + 'px',
+									'overflow-y': 'auto',
+									'overflow-x': 'hidden'									
+								}).addClass('svg-popup-max-height');
+							};
 							setTimeout(function(){
 								popup.content.css({
 									'top': '50%'
@@ -132,7 +146,7 @@
 								config.onAnimationComplate(that);
 							},config.speed*1000);
 						},
-						init: function(){					
+						appendMarkup: function(){
 							this.content = $('#'+$(that).data('svg-popup'))
 								.append(popup.createMarkup($(that).data('svg-popup')))
 								.find('.svg-popup-content').css({
@@ -157,9 +171,12 @@
 								'overflow': 'hidden',					
 								'z-index': '-1'
 							});
+						},
+						init: function(){	
+							this.appendMarkup();
 							$(that).on('click', function(){				
 								popup.animPolygon();
-							});
+							});							
 						}
 					};
 			popup.init();

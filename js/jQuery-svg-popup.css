@@ -10,11 +10,15 @@
 	top: -20px;
 	right: -20px;
 	width: 40px;
-	height: 40px;	
+	height: 40px;
 	background-color: #111;
 	font-size: 16px;
 	color: #ffffff;
 	line-height: 41px;
 	text-align: center;
 	border-radius: 50%;
+}
+.svg-popup-content.svg-popup-max-height .svg-popup-close{
+	top: 5px;
+	right: 5px;
 }
